@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <script src="https://486973354.supabase.co/storage/v1/object/public/public-assets/anti_flicker.js"></script>
+ <script async src="https://makxejaihvjucpzaxfkf.supabase.co/storage/v1/object/public/public-assets/organizations/70a464ff-ce6d-4997-9b2f-c5040d41c281/scripts/script.js"></script>
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KNJWBPR9');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご予約 - MYスキー場</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNJWBPR9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- ヘッダー -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="MYスキー場">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#features">特徴</a></li>
+                    <li><a href="index.html#monsters">樹氷</a></li>
+                    <li><a href="index.html#slopes">ゲレンデ</a></li>
+                    <li><a href="index.html#onsen">温泉</a></li>
+                    <li><a href="index.html#access">アクセス</a></li>
+                    <li><a href="index.html#plans">料金・プラン</a></li>
+                </ul>
+            </nav>
+            <a href="CTA.html" class="cta-button">ご予約</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- 予約セクションタイトル -->
+        <section class="reservation-title">
+            <div class="container">
+                <h1>ご予約</h1>
+                <p>MYスキー場での素晴らしい体験をご予約ください</p>
+            </div>
+        </section>
+
+        <!-- 予約フォーム -->
+        <section class="reservation-form">
+            <div class="container">
+                <div class="form-tabs">
+                    <button class="tab-button active" data-target="lift-tickets">リフト券</button>
+                    <button class="tab-button" data-target="accommodation">宿泊</button>
+                    <button class="tab-button" data-target="packages">パッケージ</button>
+                </div>
+
+                <div class="form-content">
+                    <!-- リフト券フォーム -->
+                    <div id="lift-tickets" class="form-panel active">
+                        <h2>リフト券のご予約</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="lift-date">ご利用日</label>
+                                <input type="date" id="lift-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lift-type">券種</label>
+                                <select id="lift-type" required>
+                                    <option value="">選択してください</option>
+                                    <option value="1day">1日券</option>
+                                    <option value="half-day">半日券</option>
+                                    <option value="multi-day">複数日券</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="lift-quantity">枚数</label>
+                                <select id="lift-quantity" required>
+                                    <option value="1">1枚</option>
+                                    <option value="2">2枚</option>
+                                    <option value="3">3枚</option>
+                                    <option value="4">4枚</option>
+                                    <option value="5">5枚</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="lift-name">お名前</label>
+                                <input type="text" id="lift-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lift-email">メールアドレス</label>
+                                <input type="email" id="lift-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lift-phone">電話番号</label>
+                                <input type="tel" id="lift-phone" required>
+                            </div>
+                            <button type="submit" class="submit-button">予約を確定する</button>
+                        </form>
+                    </div>
+
+                    <!-- 宿泊フォーム -->
+                    <div id="accommodation" class="form-panel">
+                        <h2>宿泊のご予約</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="checkin-date">チェックイン日</label>
+                                <input type="date" id="checkin-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout-date">チェックアウト日</label>
+                                <input type="date" id="checkout-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="room-type">部屋タイプ</label>
+                                <select id="room-type" required>
+                                    <option value="">選択してください</option>
+                                    <option value="standard">スタンダード</option>
+                                    <option value="deluxe">デラックス</option>
+                                    <option value="suite">スイート</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">宿泊人数</label>
+                                <select id="guests" required>
+                                    <option value="1">1名</option>
+                                    <option value="2">2名</option>
+                                    <option value="3">3名</option>
+                                    <option value="4">4名</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="accommodation-name">お名前</label>
+                                <input type="text" id="accommodation-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="accommodation-email">メールアドレス</label>
+                                <input type="email" id="accommodation-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="accommodation-phone">電話番号</label>
+                                <input type="tel" id="accommodation-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="special-requests">特別リクエスト</label>
+                                <textarea id="special-requests" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">予約を確定する</button>
+                        </form>
+                    </div>
+
+                    <!-- パッケージフォーム -->
+                    <div id="packages" class="form-panel">
+                        <h2>パッケージプランのご予約</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="package-type">プラン選択</label>
+                                <select id="package-type" required>
+                                    <option value="">選択してください</option>
+                                    <option value="family">ファミリープラン</option>
+                                    <option value="couple">カップルプラン</option>
+                                    <option value="group">グループプラン</option>
+                                    <option value="senior">シニアプラン</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="package-date">ご利用開始日</label>
+                                <input type="date" id="package-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="package-days">ご利用日数</label>
+                                <select id="package-days" required>
+                                    <option value="2">2日間</option>
+                                    <option value="3">3日間</option>
+                                    <option value="5">5日間</option>
+                                    <option value="7">7日間</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="package-people">人数</label>
+                                <select id="package-people" required>
+                                    <option value="1">1名</option>
+                                    <option value="2">2名</option>
+                                    <option value="3">3名</option>
+                                    <option value="4">4名</option>
+                                    <option value="5">5名以上</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="package-name">お名前</label>
+                                <input type="text" id="package-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="package-email">メールアドレス</label>
+                                <input type="email" id="package-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="package-phone">電話番号</label>
+                                <input type="tel" id="package-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="package-comments">その他備考</label>
+                                <textarea id="package-comments" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">予約を確定する</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- プラン詳細 -->
+        <section class="plan-details" id="plan-details">
+            <div class="container">
+                <h2>プラン詳細</h2>
+                <div class="plans-grid">
+                    <div class="plan-card">
+                        <h3>ファミリープラン</h3>
+                        <p class="plan-price">¥30,000〜</p>
+                        <ul class="plan-features">
+                            <li>2泊3日の宿泊</li>
+                            <li>4名様までのリフト券付き</li>
+                            <li>お子様向けスキーレッスン1回</li>
+                            <li>家族風呂1回無料</li>
+                            <li>夕食バイキング</li>
+                        </ul>
+                        <a href="#packages" class="plan-button">このプランを予約</a>
+                    </div>
+                    <div class="plan-card">
+                        <h3>カップルプラン</h3>
+                        <p class="plan-price">¥25,000〜</p>
+                        <ul class="plan-features">
+                            <li>2泊3日の宿泊</li>
+                            <li>2名様のリフト券付き</li>
+                            <li>貸切風呂1回無料</li>
+                            <li>夕食は部屋食</li>
+                            <li>樹氷ツアー付き</li>
+                        </ul>
+                        <a href="#packages" class="plan-button">このプランを予約</a>
+                    </div>
+                    <div class="plan-card">
+                        <h3>グループプラン</h3>
+                        <p class="plan-price">¥20,000〜/人</p>
+                        <ul class="plan-features">
+                            <li>2泊3日の宿泊</li>
+                            <li>リフト券付き</li>
+                            <li>5名以上の団体割引</li>
+                            <li>温泉無料</li>
+                            <li>スキー・スノーボードレンタル割引</li>
+                        </ul>
+                        <a href="#packages" class="plan-button">このプランを予約</a>
+                    </div>
+                    <div class="plan-card">
+                        <h3>シニアプラン</h3>
+                        <p class="plan-price">¥22,000〜</p>
+                        <ul class="plan-features">
+                            <li>2泊3日の宿泊</li>
+                            <li>シニア割引リフト券付き</li>
+                            <li>健康朝食付き</li>
+                            <li>温泉無料</li>
+                            <li>ゆっくりスキーツアー付き</li>
+                        </ul>
+                        <a href="#packages" class="plan-button">このプランを予約</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 注意事項 -->
+        <section class="notes">
+            <div class="container">
+                <h2>ご予約に関する注意事項</h2>
+                <div class="notes-content">
+                    <ul>
+                        <li>ご予約は希望日の3日前まで受け付けております。</li>
+                        <li>天候状況によりゲレンデコンディションが変わる場合がございます。</li>
+                        <li>キャンセルは3日前まで無料、2日前は50%、前日・当日は100%のキャンセル料が発生します。</li>
+                        <li>リフト券は現地にてお渡しいたします。</li>
+                        <li>宿泊プランは、チェックイン15:00、チェックアウト10:00となります。</li>
+                        <li>パッケージプランの詳細は予約確定後にメールでお送りいたします。</li>
+                    </ul>
+                    <p>その他ご不明な点がございましたら、お電話またはメールにてお問い合わせください。</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 0123-456-789</p>
+                        <p><i class="fas fa-envelope"></i> info@my-ski.example.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <img src="images/logo-white.png" alt="MYスキー場" class="footer-logo">
+                <p>〒999-3111<br>山形県上山市MY温泉</p>
+                <p>TEL: 0123-456-789<br>Email: info@my-ski.example.com</p>
+            </div>
+            <div class="footer-nav">
+                <h3>サイトマップ</h3>
+                <ul>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="index.html#features">特徴</a></li>
+                    <li><a href="index.html#monsters">樹氷</a></li>
+                    <li><a href="index.html#slopes">ゲレンデ</a></li>
+                    <li><a href="index.html#onsen">温泉</a></li>
+                    <li><a href="index.html#access">アクセス</a></li>
+                    <li><a href="index.html#plans">料金・プラン</a></li>
+                    <li><a href="CTA.html">ご予約</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>ソーシャルメディア</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>最新の情報を配信中!</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 MYスキー場. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // タブ切り替え機能
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const formPanels = document.querySelectorAll('.form-panel');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // アクティブクラスを全て削除
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    formPanels.forEach(panel => panel.classList.remove('active'));
+                    
+                    // クリックされたボタンとそれに対応するパネルをアクティブに
+                    button.classList.add('active');
+                    const targetId = button.getAttribute('data-target');
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+
+            // プランカードのリンクがクリックされたときの処理
+            const planButtons = document.querySelectorAll('.plan-button');
+            planButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    
+                    // パッケージタブをアクティブに
+                    tabButtons.forEach(btn => {
+                        if(btn.getAttribute('data-target') === 'packages') {
+                            btn.click();
+                        }
+                    });
+                    
+                    // スクロール位置を調整
+                    const targetElement = document.getElementById(targetId);
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
